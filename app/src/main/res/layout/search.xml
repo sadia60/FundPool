@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorPrimary">
+
+        <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+        <LinearLayout
+            android:layout_height="wrap_content" android:orientation="horizontal"
+            android:layout_width="fill_parent">
+                <EditText
+                    android:hint="@string/searchInputCommitteeName"
+                    android:inputType="text"
+                    android:maxLength="11"
+                    android:textColor="@color/white"
+                    android:id="@+id/search_input_committee_name"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_width="0dp">
+                </EditText>
+                <Button
+                    android:background="@color/login_button_background"
+                    android:drawableStart="@android:drawable/ic_menu_search"
+                    android:layout_gravity="center"
+                    android:id="@+id/btn_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </Button>
+        </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/searchlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".CityActivity"
+        android:visibility="visible"/>
+</LinearLayout>
+
+
+</FrameLayout>
